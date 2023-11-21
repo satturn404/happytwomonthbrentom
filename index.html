@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>2 MESES</title>
+	<link rel="stylesheet" href="css/estilos.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap" rel="stylesheet">
+    <audio  autoplay>
+        <source src="21.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+</head>
+
+<style>
+	
+p {
+	margin-bottom: 30px;
+}
+
+.texto-regular {
+	font-weight: 400;
+}
+.contenido-encabezado {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	
+	background-image: url(https://drive.google.com/uc?export=download&id=10PeLsEfvzZ2d6FWK3w7x4-9y2rd9kGJK );
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	box-shadow: inset 0 0 100px 150px rgba(0,0,0,8);
+}
+
+.texto-encabezado {
+	color: #fff;
+	
+	text-align: center;
+}
+
+.texto-encabezado .icono {
+	font-size: 40px;
+}
+
+.texto-encabezado .titulo {
+	font-weight: 700;
+	font-size: 50px;
+	animation: azul-neon 2s infinite alternate;
+}
+.texto-encabezado .love{
+	margin-bottom: 0;
+	font-size: 120px;
+	animation: naranja-neon 2s infinite alternate;
+	transition:  .5s ease-in-out;
+}
+.texto-encabezado .icono {
+	margin-bottom: 0;
+	font-size: 60px;
+	animation: naranja-neon 2s infinite alternate;
+}
+
+.texto-encabezado, .descripcion {
+	margin-top: 40px;
+	font-size: 20px;
+}
+
+.descripcion::first-line {
+	font-size: 32px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+.btn-link {
+	display: inline-block;
+	padding: 15px 30px;
+	border: 1px dotted #d79e5b;
+	border-radius: 60px;
+	color: #fff;
+	text-decoration: none;
+	font-size: 18px;
+	text-transform: uppercase;
+	text-shadow: 0 -1px 4px #fff, 2px 2px 10px #ff0, 2px -2px 20px #ff8000; 
+	transition:  .5s ease-in-out;
+}
+
+.btn-link:hover {
+	text-shadow: none;
+	border: 6px dotted rgba(255,255,255,.5);
+}
+.love:hover {
+	text-transform: uppercase;
+	text-shadow: none;
+	border-radius: 60px;
+	font-size: 130px;
+	text-shadow: 0 -1px 4px #fff, 2px 2px 10px rgb(255, 0, 255), 2px -2px 20px #ff8000; 
+	
+}
+@keyframes azul-neon {
+	0%, 10%, 15%, 20%, 30%, 35%, 40%, 50%, 55%, 60%, 70%, 75%, 80%, 85%, 90%, 100% {
+		text-shadow: 9px 9px 18px #3485ff, 
+					 3px 3px 5px #00246c, 
+					 -3px -3px 5px #00246c, 
+					 -9px -9px 27px #3485ff;
+	}
+
+	10%, 15%, 60% {
+		text-shadow: none;
+	}
+}
+
+@keyframes naranja-neon {
+	0%, 10%, 15%, 20%, 30%, 35%, 40%, 50%, 55%, 60%, 70%, 75%, 80%, 85%, 90%, 100% {
+		text-shadow: 0 -1px 4px #fff, 
+					 0 -2px 10px #ff0,
+					 0 -10px 60px #ff0000;
+	}
+
+	10%, 15%, 60% {
+		text-shadow: none;
+	}
+}
+	body{
+		font-family: 'Open Sans', sans-serif;
+		margin:0;
+		padding:0;
+		min-height:100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: black;
+		}
+	.heart{
+			height: 150px;
+			width: 150px;
+			background-color: red;
+			position: relative;
+			transform: rotate(45deg);
+			box-shadow: -20px 20px 150px #f20044;
+			animation: luces 0.5s linear infinite alternate;
+		}
+		.contenido{
+			position: fixed;
+			margin-bottom: 50px;
+			text-align: center;
+
+		}
+		@keyframes luces {
+		0%{transform: rotate(45deg) scale(1.10);}
+		80%{transform: rotate(45deg) scale(1.0);}
+		100%{transform: rotate(45deg) scale(0.8);}
+		 }
+
+		h1{
+			color: white;
+		}
+		h2{
+			color: gray;
+		}
+
+	
+	
+	.heart::before{
+		content: "";
+		position: absolute;
+		height: 150px;
+		width: 150px;
+		background: red;
+		right: 50%;
+		border-radius:50%;
+		box-shadow: 20px 20px 150px #f20044;
+	}
+	.heart::after{
+		content: "";
+		position: absolute;
+		height: 150px;
+		width: 150px;
+		background: red;
+		top: -50%;
+		border-radius:50%;
+		box-shadow: 20px 20px 150px #f20044;
+	}
+	
+
+</style>
+
+<body>
+	
+
+<header class="contenido-encabezado" id="contenido-encabezado">
+  
+		<div class="heart"></div>
+		<div class="texto-encabezado">
+			<h1 class="titulo">
+				TE AMO<br>
+				<span class="love">BRENDA</span>
+			</h1>
+			
+			<p class="descripcion">
+				Quiero estar ahí 🤍<br>
+				para abrazarte y decirte  <br>
+				que me quedaré aquí, a tu lado para siempre<br>
+				y sentirnos uno...
+			</p>
+
+			<a href="https://www.youtube.com/watch?v=09kz2s6sEq4" class="btn-link texto-regular">2 MESES SIENDO FELIZ A TU LADO MI AMOR</a><br><br>
+            
+            <audio id="audio" controls src="https://drive.google.com/uc?export=download&id=1k4jCK6icFTdrZywgOhEMG4HK-xV5aZUn"></audio>
+
+		</div>
+		<div class="heart"></div>
+        
+	</header>
+
+
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js"></script>
+	<script>
+		window.addEventListener('scroll', () => {
+			const header = document.getElementById('contenido-encabezado');
+			header.style.opacity = '1' - window.pageYOffset / 650;
+		});
+	</script>
+ 
+</body>
+</html>
